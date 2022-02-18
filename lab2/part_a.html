@@ -1,0 +1,61 @@
+<html>
+    <!-- Head is within the html tags.  -->
+    <head>
+        <!-- Style is always within header. -->
+        <!-- Style can't be seen to the visual unless code inspected.  -->
+        <style>
+            /* class selector must start with a dot., p must contain class attrib. */
+            /* Class selector p, we can apply to all class selectors.
+            so a Tag selector.
+            Thus we don't need background-color in all the other class selectors, applied global. to all paragraphs.  */
+            p { 
+            background-color: grey;
+            }
+            #black_style{
+                padding: 50px;
+                margin: 20px;
+                border-width: 15px;
+                border-color:black;
+                border-style: solid;
+            }
+            #red_style{
+                padding: 20px;
+                margin: 20px;
+                border-width: 5px;
+                border-color:red;
+                border-style: dashed;
+            }
+            /* Colon is used to split class attribute specs. */
+            /* CSS Selector starts with .
+            id attribute. 
+            Hash Start = ID CSS selector, each rule applies once.
+            Change this . to # in the styles.  */
+            #blue_style{
+                padding: 10px;
+                margin: 20px;
+                border-width: 10px;
+                border-color:blue;
+                border-style: double;
+                /* originally background-color: grey */
+            }
+        </style>
+    </head>
+    <!-- Body is within the html tags, but not in header. -->
+    <!-- Tags are usually containing attributes within the open -->
+    <!-- The contents usually go in ebtween open/close tags. -->
+    <body>
+        <!-- can inspect our border px sizes. -->
+        <!-- Class Attributes, we can add more styles over others, by separating them. -->
+        <p id="black_style" class="grey_background">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eius quaerat laudantium vero iste pariatur ut, sint quia doloremque, perspiciatis repudiandae. Deserunt ipsum eos nemo ex ad fugit error eligendi?  
+        </p>
+        <p id="red_style" class="grey_background">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis quam inventore ipsa sit facere aspernatur commodi, mollitia hic eveniet aperiam sapiente consequatur omnis praesentium necessitatibus autem fugit vitae magni!
+        </p>
+        <p id="blue_style" class="grey_background">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nobis quam inventore ipsa sit facere aspernatur commodi, mollitia hic eveniet aperiam sapiente consequatur omnis praesentium necessitatibus autem fugit vitae magni!
+        </p>
+    
+    </body>
+
+</html> 
